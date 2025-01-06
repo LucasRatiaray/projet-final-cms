@@ -21,9 +21,14 @@
 
             <div class="mt-4">
               <span class="text-sm text-gray-500 block">
-                <?php foreach ((get_the_category()) as $category) {
-                  echo $category->cat_name . ' ';
-                } ?>
+                <?php
+                $categories = get_the_category();
+                $category_names = array_map(function ($category) {
+                  return $category->cat_name;
+                }, $categories);
+
+                echo implode(' | ', $category_names);
+                ?>
               </span>
               <h3 class="text-lg font-semibold group-hover:text-blue-500">
                 <?php the_title(); ?>
