@@ -24,7 +24,11 @@ function custom_enqueue_scripts() {
 function custom_pagination() {
     echo '<nav class="mt-8">';
     echo '<ul class="flex items-center -space-x-px h-8 text-sm">';
-    $pages = paginate_links(['type' => 'array']);
+    $pages = paginate_links([
+        'type' => 'array',
+        'prev_text' => 'Previous',
+        'next_text' => 'Next',
+    ]);
 
     if (is_array($pages)) {
         foreach ($pages as $page) {
