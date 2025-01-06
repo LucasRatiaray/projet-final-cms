@@ -1,17 +1,16 @@
 <?php get_header(); ?>
 
-<div class="container mx-auto grid grid-cols-12 gap-8 py-12">
+<div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 py-12 px-4 sm:px-6 lg:px-8">
   <!-- Sidebar -->
-  <aside class="col-span-3">
-    <h1 class="text-4xl font-bold mb-6">Blogs.</h1>
-
+  <aside class="lg:col-span-3">
+    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">Blogs.</h1>
     <?= get_sidebar('sidebar') ?>
   </aside>
 
   <!-- Main content -->
-  <main class="col-span-9">
+  <main class="lg:col-span-9">
     <?php if (have_posts()) : ?>
-      <div class="grid grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         <?php while (have_posts()) : the_post(); ?>
           <a href="<?php the_permalink(); ?>" class="group block">
             <?php if (has_post_thumbnail()) : ?>
@@ -38,7 +37,9 @@
       </div>
 
       <!-- Pagination -->
-      <?php custom_pagination(); ?>
+      <div class="mt-8">
+        <?php custom_pagination(); ?>
+      </div>
 
     <?php else : ?>
       <h1 class="text-center text-2xl">No posts available</h1>

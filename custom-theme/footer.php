@@ -1,7 +1,10 @@
     <footer class="bg-[#050A3A] text-white py-8">
-        <div class="container flex justify-between items-center max-w-5xl mx-auto">
-            <div class="flex gap-2 items-end">
-                <svg width="234" height="70" viewBox="0 0 234 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="container mx-auto px-4">
+        <!-- Première ligne du footer -->
+        <div class="flex flex-col lg:flex-row justify-between items-center max-w-5xl mx-auto">
+            <!-- Logo -->
+            <div class="flex justify-center lg:justify-start gap-2 items-end mb-8 lg:mb-0">
+            <svg width="234" height="70" viewBox="0 0 234 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_6096_251)">
                         <path d="M215 48.3334H233.333V63.3334H215V48.3334Z" fill="white" />
                     </g>
@@ -15,9 +18,10 @@
                         </clipPath>
                     </defs>
                 </svg>
-
             </div>
-            <div class="flex gap-10 pt-16">
+
+            <!-- Contact Information -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 text-center lg:text-left">
                 <div class="flex flex-col gap-2">
                     <h4 class="text-md font-medium mb-2">Manager</h4>
                     <p class="text-sm">+33 1 53 31 25 23</p>
@@ -30,16 +34,19 @@
                 </div>
             </div>
         </div>
-        <div class="container flex justify-between items-center max-w-5xl mx-auto my-10">
-            <div class="text-sm">2022  Figma Template by ESGI</div>
-            <div class="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M22.037 22h-4.152v-6.496c0-1.55-.026-3.542-2.157-3.542c-2.16 0-2.49 1.688-2.49 3.43V22H9.09V8.64h3.98v1.827h.058c.553-1.05 1.908-2.158 3.928-2.158c4.204 0 4.98 2.766 4.98 6.364zM4.409 6.816A2.407 2.407 0 0 1 2 4.407a2.408 2.408 0 1 1 2.41 2.408M6.486 22H2.33V8.64h4.156z"/></svg>
+
+        <!-- Deuxième ligne du footer -->
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center max-w-5xl my-10 px-2">
+            <div class="text-sm text-center lg:text-left mb-4 lg:mb-0">2022 Figma Template by ESGI</div>
+            <div class="flex justify-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M22.037 22h-4.152v-6.496c0-1.55-.026-3.542-2.157-3.542c-2.16 0-2.49 1.688-2.49 3.43V22H9.09V8.64h3.98v1.827h.058c.553-1.05 1.908-2.158 3.928-2.158c4.204 0 4.98 2.766 4.98 6.364zM4.409 6.816A2.407 2.407 0 0 1 2 4.407a2.408 2.408 0 1 1 2.41 2.408M6.486 22H2.33V8.64h4.156z"/></svg>
             </div>
         </div>
-    </footer>
-    <?php wp_footer(); ?>
+    </div>
+</footer>
+<?php wp_footer(); ?>
 
-    </body>
+</body>
 
-    </html>
+</html>

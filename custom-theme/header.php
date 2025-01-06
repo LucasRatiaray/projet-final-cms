@@ -9,7 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="text-black pb-12">
+  <header class="text-black pb-12 px-4 sm:px-6 lg:px-8">
     <div class="container flex justify-between items-center max-w-5xl mx-auto pt-5" id="first-menu">
       <!-- Logo -->
       <a class="flex gap-2 items-end" href="<?= esc_url(home_url('/')); ?>">
@@ -60,7 +60,7 @@
       </button>
     </div>
     <div class="container mx-auto hidden justify-between items-start max-w-5xl p-8 ps-0 toggle-container" id="menu-nav">
-      <a class="text-white" href="">Or try Search</a>
+      <a class="text-white" href="<?= get_search_link(); ?>">Or try Search</a>
       <nav class="">
         <?php
         wp_nav_menu(array(
