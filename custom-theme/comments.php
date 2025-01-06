@@ -93,10 +93,6 @@ if (post_password_required()) {
                                     <label for="email" class="block text-sm font-medium text-gray-700">' . __('Email', 'textdomain') . '</label>
                                     <input id="email" name="email" type="email" class="w-full p-3 border border-gray-300 rounded-lg" value="" required />
                                 </p>',
-                    'url'    => '<p class="comment-form-url mb-4">
-                                    <label for="url" class="block text-sm font-medium text-gray-700">' . __('Website', 'textdomain') . '</label>
-                                    <input id="url" name="url" type="url" class="w-full p-3 border border-gray-300 rounded-lg" value="" />
-                                </p>',
                 ],
                 'comment_field' => '<p class="comment-form-comment mb-4">
                                         <label for="comment" class="block text-sm font-medium text-gray-700">' . _x('Comment :', 'noun', 'textdomain') . '</label>
